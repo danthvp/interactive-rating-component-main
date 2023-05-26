@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Overpass:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+    --white: #ffffff;
+    --light-grey: #959eac;
+    --medium-Grey: #7c8798;
+    --dark-blue: #252d37;
+    --dark-blue-alpha: #252d3733;
+    --very-dark-blue: #121417;
+    --black: #121417;
+    --p-fnt-sz: 15px;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background: var(--very-dark-blue);
+    color: var(--white);
+    font-family: 'Overpass', sans-serif;
+}
+
+p {
+    font-size: var(--p-fnt-sz);
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+    height: 4%; 
+}
+
+.attribution a { color: hsl(228, 45%, 44%); }
+
+#main {
+    height: 96%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.card-container {
+    overflow: hidden;
+    border-radius: 2em;
+    background: linear-gradient(to bottom, #252d37b4, var(--dark-blue-alpha));
+    display: inherit;
+    width: 23em;
+    height: auto;
+}
+
+.rating-txt-container {
+    display: inherit;
+    flex-direction: column;
+    padding: 8% 5%;
+
+    #h1 {
+        margin: 2% 0;
+        font-size: 22px;
+    }
+
+    .rating-txt {
+        margin-bottom: 8%;
+        color: var(--light-grey);
+    }
+
+    #form {
+        height: auto;
+        display: inherit;
+        flex-wrap: wrap;
+
+        .input-container {
+            width: 100%;
+            display: inherit;
+            justify-content: space-around;
+            margin-bottom: 5%;
+
+            .button {
+                padding: 4% 6%;
+                border-radius: 50%;
+                border: none;
+                background-color: var(--dark-blue);
+                color: var(--light-grey);
+                font-weight: bold;
+
+            }
+        }
+
+        #submit {
+            text-transform: uppercase;
+            font-weight: bold;
+            width: 100%;
+            padding: 3% 0;
+            border: none;
+            border-radius: 2em;
+            color: var(--white);
+            background-color: #FF8800;
+        }
+
+
+        
+    }
+}
+
+
+.img-container {
+    background-color: var(--dark-blue);
+    border-radius: 100%;
+    width: 12%;
+    height: 12%;
+    display: inherit;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    margin-bottom: 7%;
+}
+
+
