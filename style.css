@@ -101,6 +101,11 @@ p {
                 color: var(--white);
                 transition: all .5s;
             }
+
+            .active {
+                background-color: var(--orange);
+                color: var(--white);
+            }
             
         }
 

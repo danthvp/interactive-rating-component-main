@@ -1,20 +1,18 @@
 let submit = document.getElementById("submit");
-let numberButtons = document.querySelectorAll('.button')
+let divContainer = document.getElementById('numberLstCont');
+let numberBtns = divContainer.getElementsByClassName('button')
 
-// function changeColor(elem) {
-//     elem.style.background = "var(--orange)";
-//     elem.style.color = "var(--white)";
-// }
-
-let selected = 0;
-
-numberButtons.forEach(elem => {
-    elem.addEventListener('click', (e)=> {
-        e.target.style.background = "var(--orange)";
-        e.target.style.color = "var(--white)";
-        selected = e.target.value;
-        console.log(selected)
+for(let i = 0; i < numberBtns.length; i++) {
+    numberBtns[i].addEventListener('click', function() {
+    let current = document.getElementsByClassName('active');
+        if(current.length > 0){
+            current[0].className = current[0].className.replace(' active', '')
+        }
+        this.className += ' active';
     })
-})
+}
+
+
+// let selected = 0;
 
 
