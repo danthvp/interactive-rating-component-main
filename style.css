@@ -47,11 +47,13 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 
 
-.card-container {
+.card-container,
+.card-submitted {
     overflow: hidden;
     border-radius: 2em;
     background: linear-gradient(to bottom, #252d37b4, var(--dark-blue-alpha));
@@ -141,6 +143,58 @@ p {
     align-items: center;
     padding: 3% 0;
     margin-bottom: 7%;
+}
+
+
+
+
+.card-submitted {
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    padding: 2% 1%;
+    display: none;
+
+    
+    .img-thanks {
+        margin-top: 3%;
+        margin-bottom: 8%;
+    }
+
+    .rate {
+        display: inherit;
+        align-items: center;
+        justify-content: center;
+        width: 60%;
+        padding: 2% 0;
+        border-radius: 1em;
+        background-color: var(--dark-blue);
+        margin-bottom: 4%;
+
+        #rating-msg {
+            color: var(--orange);
+            text-align: center;
+            width: 100%;
+        }
+    }
+
+    .thanks-text-container {
+        display: inherit;
+        flex-direction: column;
+        align-items: center;
+        padding: 2% 0;
+
+        .h2 {
+            padding: 1% 0;
+        }
+
+        .thanks-msg {
+            color: var(--medium-Grey);
+            text-align: center;
+            width: 90%;
+            padding: 1%;
+        }
+    }
 }
 
 

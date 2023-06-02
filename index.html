@@ -12,7 +12,7 @@
 </head>
 <body>
   <main id="main" role="main">
-    <section class="card-container">
+    <section class="card-container" id="card-container">
       <article class="rating-txt-container">
         <div class="img-container">
           <img src="images/icon-star.svg" alt="rating star">
@@ -28,28 +28,25 @@
             <input type="button" value="4" class="button">
             <input type="button" value="5" class="button">
           </div>
-          <input type="button" value="Submit" id="submit">
+          <input type="submit" value="Submit" id="submit">
         </form>
       </article>
     </section>
+
+    <section class="card-submitted" id="card-submitted">
+      <div class="img-thanks">
+        <img src="images/illustration-thank-you.svg" alt="Thank you">
+      </div>
+      <div class="rate">
+        <p id="rating-msg"></p>
+      </div>
+      <article class="thanks-text-container">
+        <h2 class="h2">Thank you!</h2>
+        <p class="thanks-msg">We appreciate you taking the time to give a rating. If you ever need more support, 
+          don’t hesitate to get in touch!</p>
+      </article>
+    </section>
   </main>
-
-  <!-- Rating state start -->
-
-  
-
-  <!-- Rating state end -->
-
-  <!-- Thank you state start -->
-
-  <!-- You selected X out of 5
-
-  Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch! -->
-
-  <!-- Thank you state end -->
 
   
   <footer class="attribution" role="footer">
