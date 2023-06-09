@@ -198,3 +198,9 @@ p {
 }
 
 
+@media screen and (min-width:300px) and (max-width:500px) {
+    #main .card-container,
+    #main .card-submitted {
+        width: 21em;
+    }
+}
